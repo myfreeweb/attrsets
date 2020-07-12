@@ -1,0 +1,21 @@
+[package]
+name = "attrsets"
+version = "0.1.0"
+authors = ["Greg V <greg@unrelenting.technology>"]
+keywords = [ "proc-macro", "attribute", "serde", "variants", "cloning" ]
+categories = [ "encoding" ]
+description = "Proc macro for defining multiple variants of a struct/enum with different attribute annotations e.g. for multiple Serde serializations"
+license = "Unlicense"
+readme = "README.md"
+homepage = "https://github.com/myfreeweb/attrsets"
+repository = "https://github.com/myfreeweb/attrsets"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1", features = ["extra-traits"] }
+proc-macro2 = "1"
+quote = "1"
+itertools = "0"
